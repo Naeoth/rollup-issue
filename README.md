@@ -2,7 +2,7 @@
 
 To avoid unresolved dependencies warning on compilation, I use a regex for the external rollup configuration to exclude all the imports which starts with "." (it means all the local import in fact).
 It worked perfectly before 2.26.8 but a [change](https://github.com/rollup/rollup/pull/3753) in 2.26.8 broke the trick.
-It seems that now, it's impossible to exclude the local import with a regex if you have a least a regex with `/.+/` or `/.*/`.
+It seems that now, it's impossible to exclude the local import with a regex if you have at least a regex with `/.+/` or `/.*/`.
 
 ## Configuration
 
